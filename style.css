@@ -282,28 +282,34 @@ h1 {
   margin-bottom: 24px;
 }
 
+/* Colourful keyword boxes – now with muted, site‑harmonious colours */
 .research-interests-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 24px;
+  gap: 12px 14px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .research-interests-list li {
-  position: relative;
-  padding-left: 22px;
-  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 18px 7px 14px;
+  border-radius: var(--radius-sm);
+  border-left: 5px solid var(--topic-color, var(--accent));
+  background: var(--topic-bg, var(--surface-soft));
+  font-size: 14px;
+  font-weight: 500;
   color: var(--text);
+  line-height: 1.4;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 }
 
-.research-interests-list li::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-  font-size: 18px;
+.research-interests-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(46, 64, 82, 0.08);
 }
 
 /* ── education ── */
@@ -313,10 +319,11 @@ h1 {
   gap: 22px;
 }
 
+/* Full colour border – now a soft slate blue */
 .edu-card {
   background: var(--surface);
-  border: 1px solid var(--line);
-  padding: 32px 24px;
+  border: 3px solid var(--card-accent, var(--accent));
+  padding: 32px 28px;
   border-radius: var(--radius-sm);
   transition: transform 0.2s, box-shadow 0.2s;
   text-align: center;
@@ -324,7 +331,7 @@ h1 {
 
 .edu-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(46, 64, 82, 0.06);
+  box-shadow: 0 8px 28px rgba(46, 64, 82, 0.07);
 }
 
 .edu-card .edu-logo {
@@ -370,6 +377,57 @@ h1 {
   color: var(--muted);
   font-size: 14px;
   margin-top: 8px;
+}
+
+/* TA topics inside education */
+.ta-section {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+
+.ta-section .ta-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ta-topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ta-topic-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+  padding: 4px 14px 4px 10px;
+  border-radius: 50px;
+  border: 1px solid var(--line);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.ta-topic-list li::before {
+  content: "✦";
+  font-size: 12px;
+  color: var(--card-accent, var(--accent));
+}
+
+.ta-topic-list li:hover {
+  background: var(--surface-soft);
+  border-color: var(--card-accent, var(--accent));
 }
 
 /* ── experience timeline: original card styling + corrected continuous dots ── */
@@ -671,6 +729,7 @@ h1 {
   .hero-contact-btn { padding: 5px 12px; font-size: 12px; gap: 5px; }
   .hero-contact-btn .icon { width: 15px; height: 15px; }
   .hero-contact-btn .label { font-size: 11px; }
-  .research-interests-list { flex-direction: column; gap: 8px; }
+  .research-interests-list li { font-size: 13px; padding: 5px 14px 5px 10px; border-left-width: 4px; }
+  .ta-topic-list li { font-size: 12px; padding: 3px 12px 3px 8px; }
   .footer-row { flex-direction: column; gap: 8px; }
 }

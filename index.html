@@ -6,6 +6,14 @@
 <meta name="description" content="Bardiya Kariminia — Computer Engineering student and researcher working on generative AI, vision-language models, neural rendering, and optimization.">
 <title>Home · Bardiya Kariminia</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Make bold text in these sections stand out with a warm red */
+  .hero-lead strong,
+  .intro strong,
+  .edu-desc strong {
+    color: #C0392B;
+  }
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -30,21 +38,18 @@
       <p class="kicker">Computer Vision · Generative AI · Visual Computing</p>
       <h1>Bardiya<br>Kariminia</h1>
       <p class="hero-lead">Computer Engineering student and researcher exploring generative models, vision-language models, neural rendering, and optimization.</p>
+      <p class="hero-lead"><strong>Currently Seeking PHD-direct & Masters opportunities</strong></p>
 
-      <!-- contact buttons -->
-      <div class="hero-contact-row">
+      <!-- contact buttons – horizontal line removed -->
+      <div class="hero-contact-row" style="border-top: none;">
         <a class="hero-contact-btn" href="mailto:radiya2254@gmail.com" title="Email">
           <span class="icon"><svg viewBox="0 0 24 24"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg></span>
           <span class="label">Email</span>
         </a>
-        <a class="hero-contact-btn" href="#" target="_blank" rel="noreferrer" title="Google Scholar">
+        <a class="hero-contact-btn" href="https://scholar.google.com/citations?user=zUwPlUsAAAAJ&hl=en" target="_blank" rel="noreferrer" title="Google Scholar">
           <span class="label" style="font-weight:500;">Google Scholar</span>
         </a>
-        <a class="hero-contact-btn" href="assets/Bardiya-Kariminia-CV.pdf" title="CV">
-          <span class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></span>
-          <span class="label">CV</span>
-        </a>
-        <a class="hero-contact-btn" href="#" target="_blank" rel="noreferrer" title="LinkedIn">
+        <a class="hero-contact-btn" href="https://www.linkedin.com/in/bardiya-kariminia-96b140264/" target="_blank" rel="noreferrer" title="LinkedIn">
           <span class="icon"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
           <span class="label">LinkedIn</span>
         </a>
@@ -56,10 +61,6 @@
     </div>
     <aside class="profile fade-in delay-2">
       <div class="profile-photo"><img src="assets/profile.jpg" alt="Bardiya Kariminia"></div>
-      <div class="profile-caption">
-        <strong>Research-focused portfolio</strong>
-        <span>Shahid Beheshti University · BS in Computer Engineering</span>
-      </div>
     </aside>
   </div>
 </section>
@@ -70,15 +71,15 @@
     <div class="section-title">
       <h2>Research Interests</h2>
       <p class="intro" style="max-width:780px; margin-top:4px;">
-        My research is centred on building intelligent visual systems that can understand, generate, and reason about the world. I am particularly drawn to problems that sit at the intersection of generative modelling, multimodal learning, and 3D vision.
+        My research is centred on building intelligent visual systems that can understand, generate, and reason about the world. I am particularly drawn to problems that sit at the intersection of <strong>generative modelling</strong>, <strong>multimodal learning</strong>, and <strong>3D vision</strong>.
       </p>
     </div>
     <ul class="research-interests-list">
-      <li>Generative AI &amp; Diffusion Models</li>
-      <li>Vision-Language Models &amp; Multimodal Reasoning</li>
-      <li>Neural Rendering (NeRF, Gaussian Splatting)</li>
-      <li>Optimization &amp; Diversity-Aware Design</li>
-      <li>Image Editing &amp; Analogy-Based Transfer</li>
+      <li style="--topic-color: #355b81; --topic-bg: #DDE1E6;">Generative AI &amp; Diffusion Models</li>
+      <li style="--topic-color: #bc8f5f; --topic-bg: #F3ECE3;">Image and Video Editing</li>
+      <li style="--topic-color: #4A4E69; --topic-bg: #DEDDE8;">Neural Rendering (NeRF, Gaussian Splatting)</li>
+      <li style="--topic-color: #3F5E5A; --topic-bg: #D4E3E0;">Vision-Language Models &amp; Multimodal Reasoning</li>
+      <li style="--topic-color: #A67C6B; --topic-bg: #F2E6DF;">Optimization &amp; Diversity-Aware Design</li>
     </ul>
   </div>
 </section>
@@ -89,15 +90,29 @@
     <div class="section-title">
       <h2>Education</h2>
     </div>
-    <div class="edu-grid" style="grid-template-columns: 1fr; max-width: 600px;">
-      <div class="edu-card">
+    <div class="edu-grid" style="grid-template-columns: 1fr; max-width: 640px;">
+      <div class="edu-card" style="--card-accent: #5A7A9A;">
         <div class="edu-logo">
-          <!-- 👇 REPLACE src WITH YOUR LOCAL LOGO PATH -->
           <img src="assets/logos/SBU.png" alt="Shahid Beheshti University">
         </div>
         <h3>Shahid Beheshti University</h3>
         <div class="edu-meta">B.S. in Computer Engineering · 2022 – 2026</div>
-        <div class="edu-desc">Focus on machine learning, computer vision, and optimization. GPA: 3.8/4.0.</div>
+        <div class="edu-desc">
+          <strong>Completed the undergraduate programme in Computer Engineering</strong> with a strong focus on <strong>Artificial Intelligence</strong> and <strong>computer vision</strong>. Enrolled in <strong>graduate-level research projects</strong> in Computer Vision alongside the program. <strong>GPA: 18.78/20.0</strong>
+        </div>
+
+        <!-- TA topics -->
+        <div class="ta-section">
+          <span class="ta-label">🧠 Teaching Assistantship:</span>
+          <ul class="ta-topic-list">
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Machine Learning Fundamentals</li>
+            <li>Computer Vision</li>
+            <li>Programming with Python</li>
+            <li>Database Systems</li>
+            <li>Linear Algebra for ML</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -116,7 +131,6 @@
         <div class="exp-card" style="--card-accent: #4A4E69;">
           <div class="exp-card-inner">
             <div class="exp-logo">
-              <!-- 👇 REPLACE src WITH YOUR LOCAL LOGO PATH -->
               <img src="assets/logos/SFU.png" alt="SFU">
             </div>
             <div class="exp-body">
@@ -141,7 +155,6 @@
         <div class="exp-card" style="--card-accent: #1a237e;">
           <div class="exp-card-inner">
             <div class="exp-logo" style="background:#1a237e; border-color:#1a237e;">
-              <!-- 👇 REPLACE src WITH YOUR LOCAL LOGO PATH -->
               <img src="assets/logos/MPI.png" alt="MPI">
             </div>
             <div class="exp-body">
@@ -166,7 +179,6 @@
         <div class="exp-card" style="--card-accent: #b71c1c;">
           <div class="exp-card-inner">
             <div class="exp-logo" style="background:#b71c1c; border-color:#b71c1c;">
-              <!-- 👇 REPLACE src WITH YOUR LOCAL LOGO PATH -->
               <img src="assets/logos/Sharif.png" alt="RIML">
             </div>
             <div class="exp-body">
@@ -190,7 +202,6 @@
         <div class="exp-card" style="--card-accent: #3F5E5A;">
           <div class="exp-card-inner">
             <div class="exp-logo">
-              <!-- 👇 REPLACE src WITH YOUR LOCAL LOGO PATH -->
               <img src="assets/logos/SBU.png" alt="SBU">
             </div>
             <div class="exp-body">
@@ -221,6 +232,8 @@
     <span>Computer Vision · Generative AI · Visual Computing</span>
   </div>
 </footer>
-<script src="script.js"></script>
+<script>
+  document.querySelector('[data-year]')?.textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
